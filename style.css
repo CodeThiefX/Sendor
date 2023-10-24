@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+@font-face {
+    font-family: libel;
+    src: url(libel.otf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+audio{
+    display: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-shadow: #000 -2px 2px 2px;
+    text-align: center;
+    font-family: 'libel', sans-serif;
+    color: white;
+    background-image: url(images/bg1.jpg);
+}
+.clear{
+    clear: both;
+}
+.italic{
+    font-style: italic;
+}
+em, .colored{
+    color: #4f9dd7;
+    font-weight: 700;
+}
+.wrapper{
+    position: relative;
+    width: 64rem;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.enter{
+    position: fixed;
+    left: -1rem;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 500;
+    cursor: pointer;
+}
+.enter.none{
+    display: none;
+}
+.enter .logo{
+    margin-right: -1rem;
+}
+.enter a{
+    height: 100%;
+    display: block;
+}
+.enter a img{
+    height: 70%;
+}
+.enter .crystal{
+    position: absolute;
+    display: block;
+    width: 6rem;
+    height: 5rem;
+    left: calc(50% - 3rem);
+    top: 0;
+    animation: animCrystal 3s linear infinite;
+}
+section{
+    position: absolute;
+    width: 100%;
+    padding: 0 3rem;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 100%;
+    background-position-y: 10rem;
+}
+.content{
+    overflow-y: auto;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+.logo{
+    width: 50%;
+}
+.title {    
+    font-size: 5.4rem;
+    line-height: 6.4rem;
+    font-weight: 700;
+    text-shadow: #4f9dd7 -2px 2px 2px;
+    letter-spacing: 0.4rem;
+}
+.title span{
+    display: block;
+}
+.title em{
+    font-family: 'libel';
+    color: white;
+    margin-right: 1.2rem;
+}
+.subtitle{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    text-shadow: #4f9dd7 -2px 2px 2px;
+}
+.lore{
+    font-weight: 300;
+    color: #fff000;
+    margin-bottom: 2rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+.left,.right{
+    float: left;
+    width: 50%;
+    margin-top: 3rem;
+}
+.left p,.right p{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 900;
+}
+.left span, .right span{
+    display: block;
+    color: #4f9dd7;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 8rem 0 3rem 0;
+    font-weight: 900;
+}
+.ca{
+    cursor: pointer;
+}
+.toke{
+    width: 100%;
+}
+.toke li{
+    display: block;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.toke div{
+    width: 100%;
+    height: 1rem;
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+}
+.toke span{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #4f9dd7;
+}
+.toke .two span{
+    width: 95%;
+}
+.toke .three span{
+    width: 5%;
+}
+.mail{
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+.socials{
+    margin: 8rem 0;
+}
+.socials a{
+    font-size: 4rem;
+    text-decoration: none;
+}
+.socials li{
+    display: inline-block;
+    width: calc(100% / 5 - 5px);
+    text-align: center;
+}
+.socials img{
+    width: 80%;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.4rem;
+}
+/*******************************************************************/
+/*******************************************************************/
+/***************************ANIMATIONS******************************/
+/*******************************************************************/
+/*******************************************************************/
+
+
+@keyframes animCrystal {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(63rem);
+    }
+    100% {
+        transform: translateY(63rem);
+    }
+}
+
+/*******************************************************************/
+/*******************************************************************/
+/***************************RESPONSIVE******************************/
+/*******************************************************************/
+/*******************************************************************/
+
+@media (max-width: 1024px){
+    body .wrapper{
+        width: 100%;
+    }
+
+    body section{
+        padding: 0 1.5rem;
+    }
+    body .ca{
+        font-size: 1.4rem;
+    }
+}
