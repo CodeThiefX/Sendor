@@ -74,7 +74,7 @@ body{
     font-style: italic;
 }
 em, .colored{
-    color: #4f9dd7;
+    color: rgb(8, 194, 8);
     font-weight: 700;
 }
 .wrapper{
@@ -143,7 +143,7 @@ section{
     font-size: 5.4rem;
     line-height: 6.4rem;
     font-weight: 700;
-    text-shadow: #4f9dd7 -2px 2px 2px;
+    text-shadow: rgb(8, 194, 8) -2px 2px 2px;
     letter-spacing: 0.4rem;
 }
 .title span{
@@ -159,7 +159,7 @@ section{
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 3rem;
-    text-shadow: #4f9dd7 -2px 2px 2px;
+    text-shadow: rgb(8, 194, 8) -2px 2px 2px;
 }
 .lore{
     font-weight: 300;
@@ -181,7 +181,7 @@ p{
 }
 .left span, .right span{
     display: block;
-    color: #4f9dd7;
+    color: rgb(8, 194, 8);
 }
 h3{
     text-transform: uppercase;
@@ -210,7 +210,7 @@ h3{
     display: block;
     height: 100%;
     width: 100%;
-    background: #4f9dd7;
+    background: rgb(8, 194, 8);
 }
 .toke .two span{
     width: 95%;
